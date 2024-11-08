@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Servers Down</title>
+    <title>Page Moving</title>
 </head>
 <body>
-    <h1>404 - Servers Down</h1>
-    <p>Oops! It looks like the servers are down. Please try again later.</p>
+    <h1>The page is getting moved to a new domain</h1>
+    <p>Click the button below to go to the webpage</p>
+    <button id="newLinkBtn">Go to webpage</button>
+
+    <script>
+        document.getElementById('newLinkBtn').addEventListener('click', function() {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Redirect to Rickroll
+        });
+    </script>
 </body>
 </html>
