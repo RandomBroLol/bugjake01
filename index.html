@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun All-in-One Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: orange;
+            border: none;
+            color: black;
+        }
+        #ip-display {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Fun Zone!</h1>
+
+    <button onclick="tellJoke()">Tell Me a Joke</button>
+    <p id="joke"></p>
+
+    <button onclick="playSound()">Play a Random Sound</button>
+
+    <button onclick="changeColor()">Change Background Color</button>
+
+    <button onclick="playGame()">Play a Game</button>
+
+    <div id="ip-display">Your IP is: Loading...</div>
+
+    <script src="api.js"></script>
+</body>
+</html>
